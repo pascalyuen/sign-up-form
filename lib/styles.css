@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(img/bg.jpg);
+  background-size: auto 100%;
+  height: 100vh;
+  width: 30vw;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30%;
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo-img {
+  max-width: 15%;
+}
+
+.logo-word {
+  color: white;
+  font-family: 'Aoboshi One', serif;
+  font-size: 2rem;
+}
+
+.credit {
+  margin-top: auto;
+  color: white;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: rgb(245, 245, 245);
+}
+
+.caption {
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+
+.form-block {
+  padding: 1em 2em;
+  background-color: white;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+}
+
+.form-line {
+  display: flex;
+  margin: 1em 0;
+}
+
+.form-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+div > label {
+  display: block;
+  font-size: 0.8rem;
+}
+
+div > input {
+  margin-right: 5em;
+  padding: 0.3em;
+  border: solid #E5E7EB;
+  border-radius: 4px;
+  width:20em;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 1px 1px 2.5px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid blue;
+}
+
+input:required:invalid {
+  border: 1px solid red;
+}
+
+button[type="submit"] {
+  margin-top: 1.5em;
+  margin-left: 2rem;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 4px;
+  background-color: #596D48;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer
+}
+
+a {
+  text-decoration: none;
+  color: #596D48;
+}
+
+.right-section > p {
+  margin-left: 2em;
+}
